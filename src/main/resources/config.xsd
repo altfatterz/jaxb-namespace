@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+           targetNamespace="http://www.backbase.com/ns/widgets"
+           xmlns:bb="http://www.backbase.com/ns/widgets"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- widget definition root element -->
+    <xs:element name="widget" type="bb:widgetType"/>
+
+    <!-- widget definition data types -->
+    <xs:complexType name="resourcesType">
+        <xs:sequence>
+            <xs:element type="bb:resourceType" name="resource" maxOccurs="unbounded" minOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="widgetType">
+        <xs:sequence>
+            <xs:element type="bb:resourcesType" name="resources" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="resourceType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="type" use="required"/>
+                <xs:attribute type="xs:string" name="src" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>
