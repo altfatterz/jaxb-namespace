@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bb:widget xmlns:bb="http://www.backbase.com/ns/widgets">
-
-    <!-- references all resources files, which are needed for the given widget -->
     <bb:resources>
-        <!-- an example of generated javascript file from the .soy file -->
-        <bb:resource type="text/javascript" src="js/wrap-layout-generated.js"/>
-
-        <!-- other static resources in the widget -->
         <bb:resource type="text/css" src="css/wrap-layout.css"/>
         <bb:resource type="text/javascript" src="template/wrap-layout.js"/>
         <bb:resource type="image/png" src="png/wrap-layout.js"/>
     </bb:resources>
-
 </bb:widget>
