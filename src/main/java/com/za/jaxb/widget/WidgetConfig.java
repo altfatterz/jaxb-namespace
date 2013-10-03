@@ -18,7 +18,7 @@ public class WidgetConfig {
     private List<WidgetResourceRef> widgetResourceRefs;
 
     public WidgetConfig() {
-        widgetResourceRefs = new ArrayList<>();
+        widgetResourceRefs = new ArrayList<WidgetResourceRef>();
     }
 
     public void addWidgetResource(WidgetResourceRef widgetResourceRef) {
