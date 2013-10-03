@@ -13,6 +13,7 @@ public class WidgetResourceRef {
     @XmlAttribute
     private String src;
 
+    /** Default constructor, needed for JAXB framework */
     public WidgetResourceRef() {
     }
 
